@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ML Glossary</title>
+  <meta name="description" content="Definitions of machine learning concepts, powered by Wikipedia." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo"><span>&gt;</span> ml_glossary</div>
+    <div class="tagline">definitions for machine learning concepts</div>
+  </header>
+
+  <div class="app-shell">
+    <div class="toolbar">
+      <div class="search-wrap">
+        <span class="search-icon">&gt;_</span>
+        <input
+          id="search"
+          type="search"
+          placeholder="search concepts..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+      <div id="chips" class="chips"></div>
+    </div>
+
+    <div class="content">
+      <aside class="term-list-pane">
+        <div class="list-header">
+          <span id="list-count"></span>
+        </div>
+        <ul id="term-list"></ul>
+      </aside>
+
+      <main id="definition-pane" class="definition-pane"></main>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
